@@ -9,7 +9,7 @@ public class PageObjectsPracticeFormTests extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
 
     @Test
-    @Tag("demoqa")
+
     void fullRegistrationTest() {
         registrationPage.openPage()
                 .setFirstName("Aleksandr")

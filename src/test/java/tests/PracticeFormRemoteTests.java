@@ -48,7 +48,6 @@ public class PracticeFormRemoteTests {
     }
 
     @Test
-    @Tag("demoqa")
     void successfulRegistrationTest() {
         step("Open form", () -> {
         open("/automation-practice-form");
