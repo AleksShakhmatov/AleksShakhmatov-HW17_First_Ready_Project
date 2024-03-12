@@ -48,8 +48,7 @@ public class HhVacancyTest {
     }
 
     @Test
-    @Tag("demoqa")
-    @DisplayName("Проверка страницы нужной вакансии")
+
     void checkVacancyHeaderTest() {
         open("/vacancy/94270561");
         $(".bloko-notification__close").click();
@@ -59,8 +58,7 @@ public class HhVacancyTest {
     }
 
     @Test
-    @Tag("demoqa")
-    @DisplayName("Проверка перехода кнопки добавления в избранное")
+
     void checkVacancyFavouriteButtonTest() {
         open("/vacancy/94270561");
         $(".bloko-notification__close").click();
@@ -73,8 +71,7 @@ public class HhVacancyTest {
 
 
     @Test
-    @Tag("demoqa")
-    @DisplayName("Проверка кнопки Откликнуться")
+
     void checkVacancyReplayButtonTest() {
         open("/vacancy/94270561");
         $(".bloko-notification__close").click();
@@ -82,8 +79,7 @@ public class HhVacancyTest {
     }
 
     @Test
-    @Tag("demoqa")
-    @DisplayName("Негативная проверка поля обратной связи")
+
     void checkVacancyReplayFormButtonTest() {
         open("/vacancy/94270561");
         $(".bloko-notification__close").click();
@@ -95,8 +91,7 @@ public class HhVacancyTest {
     }
 
     @Test
-    @Tag("demoqa")
-    @DisplayName("Проверка перехода на страницу о компании")
+
     void checkVacancyCompanyRedirectTest() {
         open("/vacancy/94270561");
         $(".bloko-notification__close").click();
@@ -105,8 +100,7 @@ public class HhVacancyTest {
     }
 
     @Test
-    @Tag("demoqa")
-    @DisplayName("Проверка наполнения вакансии по блокам")
+
     void checkVacancyContentTest() {
         open("/vacancy/94270561");
         $(".bloko-notification__close").click();
@@ -145,8 +139,7 @@ public class HhVacancyTest {
     }
 
     @Test
-    @Tag("demoqa")
-    @DisplayName("Проверка рейтинга в отзыве")
+
     void checkVacancyFeebackTest() {
         open("/vacancy/94270561");
         $(".bloko-notification__close").click();

@@ -49,7 +49,7 @@ public class ibsSiteTests {
 
     @Test
     @Tag("demoqa")
-    @DisplayName("Проверка страницы нужной вакансии")
+    @DisplayName("Проверка сайта компании-автора вакансии")
     void titleGeneralPageIbsTest() {
         step("Open form", () -> {
             open("https://ibs.ru/");
@@ -59,7 +59,7 @@ public class ibsSiteTests {
 
     @Test
     @Tag("demoqa")
-    @DisplayName("Проверка страницы нужной вакансии")
+    @DisplayName("Проверка языка сайта")
     void languageMenuPageIbsTest() {
         step("Open for", () -> {
             open("https://ibs.ru/");
@@ -71,7 +71,7 @@ public class ibsSiteTests {
 
     @Test
     @Tag("demoqa")
-    @DisplayName("Проверка страницы нужной вакансии")
+    @DisplayName("Проверка адреса одного из филиалов компании")
     void contactPageIbsTest() {
         step("Open for", () -> {
             open("https://ibs.ru/");
@@ -87,7 +87,7 @@ public class ibsSiteTests {
 
     @Test
     @Tag("demoqa")
-    @DisplayName("Проверка страницы нужной вакансии")
+    @DisplayName("Проверка меню сайта")
     void burgerMenuPageIbsTest() {
         step("Open for", () -> {
             open("https://ibs.ru/");
@@ -104,7 +104,7 @@ public class ibsSiteTests {
 
     @Test
     @Tag("demoqa")
-    @DisplayName("Проверка страницы нужной вакансии")
+    @DisplayName("Проверка наличия строки поиска")
     void searchStringPageIbsTest() {
         step("Open for", () -> {
             open("https://ibs.ru/");
@@ -115,7 +115,7 @@ public class ibsSiteTests {
 
     @Test
     @Tag("demoqa")
-    @DisplayName("Проверка страницы нужной вакансии")
+    @DisplayName("Проверка наличия адресов социальных сетей")
     void socialContactsPageIbsTest() {
         step("Open for", () -> {
             open("https://ibs.ru/");
