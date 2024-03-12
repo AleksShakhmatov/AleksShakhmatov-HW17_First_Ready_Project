@@ -15,11 +15,11 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-public class PracticeFormRemoteTests {
+public class ibsSiteTests {
 
     @BeforeAll
     static void beforeAll() {
-        Configuration.baseUrl = "https://demoqa.com";
+        Configuration.baseUrl = "https://ibs.ru/";
         Configuration.browserSize = "1920x1080";
         Configuration.pageLoadStrategy = "eager";
         //Configuration.timeout = 100000;
@@ -49,52 +49,84 @@ public class PracticeFormRemoteTests {
 
     @Test
     @Tag("demoqa")
-    void successfulRegistrationTest() {
+    @DisplayName("Проверка страницы нужной вакансии")
+    void titleGeneralPageIbsTest() {
         step("Open form", () -> {
-        open("/automation-practice-form");
-            SelenideElement bannerRoot = $(".fc-consent-root");
-            if (bannerRoot.isDisplayed()) {
-                bannerRoot.$(byText("Consent")).click();
-            }
-        //$(".fc-button-label").click();
-        executeJavaScript("$('#fixedban').remove()");
-        executeJavaScript("$('footer').remove()");
-        $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
+            open("https://ibs.ru/");
+            $(".top-slide__desc").shouldHave(text("Ключевой технологический партнер лидеров российского бизнеса"));
         });
-
-        step("Fill form", () -> {
-        $("#firstName").setValue("Aleksandr");
-        $("#lastName").setValue("Exile");
-        $("#userEmail").setValue("AleksandrExile@gmail.com");
-        $("#genterWrapper").$(byText("Male")).click();
-        $("#userNumber").setValue("9001122999");
-        $("#dateOfBirthInput").click();
-        $(".react-datepicker__month-select").selectOptionByValue("6");
-        $(".react-datepicker__year-select").selectOption("1988");
-        $(".react-datepicker__day--009:not(.react-datepicker__day--outside-month)").click();
-        $("#subjectsInput").setValue("Arts").pressEnter();
-        $("#hobbiesWrapper").$(byText("Sports")).click();
-        $("#uploadPicture").uploadFromClasspath("9.png");
-        $("#currentAddress").setValue("www.Leningrad.spb.ru");
-        $("#state").click();
-        $("#stateCity-wrapper").$(byText("Rajasthan")).click();
-        $("#city").click();
-        $("#stateCity-wrapper").$(byText("Jaipur")).click();
-        $("#submit").click();
-        });
-
-        step("Verify results", () -> {
-        $(".modal-header").shouldHave(text("Thanks for submitting the form"));
-        $(".table-responsive").shouldHave(text("Aleksandr Exile"));
-        $(".table-responsive").shouldHave(text("900112299"));
-        $(".table-responsive").shouldHave(text("9 July,1988"));
-        $(".table-responsive").shouldHave(text("Arts"));
-        $(".table-responsive").shouldHave(text("Sports"));
-        $(".table-responsive").shouldHave(text("9.png"));
-        $(".table-responsive").shouldHave(text("www.Leningrad.spb.ru"));
-        $(".table-responsive").shouldHave(text("Rajasthan Jaipur"));
-        });
-
     }
-}
 
+    @Test
+    @Tag("demoqa")
+    @DisplayName("Проверка страницы нужной вакансии")
+    void languageMenuPageIbsTest() {
+        step("Open for", () -> {
+            open("https://ibs.ru/");
+            $("a[href='/eng/']").shouldHave(text("Eng")).click();
+            $(".top-slide__desc").shouldHave(text("A key technology partner for Russian business leaders"));
+
+        });
+    }
+
+    @Test
+    @Tag("demoqa")
+    @DisplayName("Проверка страницы нужной вакансии")
+    void contactPageIbsTest() {
+        step("Open for", () -> {
+            open("https://ibs.ru/");
+            $("a[href='/contacts/']").click();
+            $(".top--short").shouldHave(text("Офисы группы компаний IBS"));
+            $("#bx_651765591_5834").click();
+            $(".global").shouldHave(text("Россия, 644046, Омск, ул. Маяковского, 74А\n" +
+                    "Телефон: +7 (381) 233-23-08\n" +
+                    "\n" +
+                    "Подробнее об офисе IBS в Омске"));
+        });
+    }
+
+    @Test
+    @Tag("demoqa")
+    @DisplayName("Проверка страницы нужной вакансии")
+    void burgerMenuPageIbsTest() {
+        step("Open for", () -> {
+            open("https://ibs.ru/");
+            $(".header-burger").click();
+            $(".navigation-sections").shouldHave(text("Решения и услуги"));
+            $(".navigation-sections").shouldHave(text("Отраслевые решения"));
+            $(".navigation-sections").shouldHave(text("Проекты"));
+            $(".navigation-sections").shouldHave(text("Создано в IBS"));
+            $(".navigation-sections").shouldHave(text("Медиацентр"));
+            $(".navigation-sections").shouldHave(text("О компании"));
+
+        });
+    }
+
+    @Test
+    @Tag("demoqa")
+    @DisplayName("Проверка страницы нужной вакансии")
+    void searchStringPageIbsTest() {
+        step("Open for", () -> {
+            open("https://ibs.ru/");
+            $(".search-form").$("[placeholder='Поиск по сайту']");
+
+        });
+    }
+
+    @Test
+    @Tag("demoqa")
+    @DisplayName("Проверка страницы нужной вакансии")
+    void socialContactsPageIbsTest() {
+        step("Open for", () -> {
+            open("https://ibs.ru/");
+            $(".footer-socials").$("a[href='https://vk.com/ru_ibs']");
+            $(".footer-socials").$("a[href='https://habr.com/ru/company/ibs/blog/']");
+            $(".footer-socials").$("a[href='https://vc.ru/ibs']");
+            $(".footer-socials").$("a[href='https://hh.ru/employer/139']");
+            $(".footer-socials").$("a[href='https://t.me/ibs_ru']");
+            $(".footer-socials").$("a[href='https://www.youtube.com/@ibsru']");
+
+        });
+    }
+
+}
