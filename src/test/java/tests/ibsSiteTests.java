@@ -57,6 +57,7 @@ public class ibsSiteTests {
         });
     }
 
+
     @Test
     @Tag("demoqa")
     @DisplayName("Проверка языка сайта")
