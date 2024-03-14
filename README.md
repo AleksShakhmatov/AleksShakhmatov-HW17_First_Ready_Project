@@ -8,7 +8,7 @@
 - <a href="#report">Интеграция с Allure</a>
 - <a href="#testops">Интеграция с Allure TestOps</a>
 - <a href="#jira">Интеграция с Jira</a>
-- <a href="#telegram">Уведомления в Telegram через бота</a
+- <a href="#telegram">Уведомления в Telegram через бота</a>
 - <a href="#video">Видео отчет запуска тестов (Selenoid)</a>
 
 <a id="stech"></a>
