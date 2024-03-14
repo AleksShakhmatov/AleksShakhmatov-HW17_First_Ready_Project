@@ -1,16 +1,17 @@
 # Проект по автоматизации тестовых сценариев для сайта компании IBS
 ## Содержание:
 
-- [Используемый стек технологий и инструментов](#-используемый-стек-технологий-и-инструментов)
-- [Реализованные проверки](#-реализованные-проверки)
-- [Запуск автотестов](#-запуск-автотестов)
-- [Сборка в Jenkins](#-сборка-в-jenkins)
-- [Пример Allure-отчета](#-пример-allure-отчета)
-- [Интеграция с Allure TestOps](#-интеграция-с-allure-testOps)
-- [Интеграция с Jira](#-интеграция-с-jira)
-- [Уведомления в Telegram](#-уведомления-в-telegram)
-- [Видео примера запуска тестов в Selenoid](#-видео-примера-запуска-теста-в-selenoid)
+- <a href="#stech">Используемый стек технологий и инструментов</a>
+- [Реализованные проверки](#cheks)
+- [Запуск автотестов](#engine)
+- [Сборка в Jenkins](#build)
+- [Интеграция с Allure](#report)
+- [Интеграция с Allure TestOps](#testops)
+- [Интеграция с Jira](#jira)
+- [Уведомления в Telegram через бота](#telegram)
+- [Видео отчет запуска тестов (Selenoid)](#video)
 
+<a id="stech"></a>
 ## Используемый стек технологий и инструментов
 
 | Java                                                   | IntelliJ  <br>  Idea                                           | GitHub                                                   | JUnit 5                                                  | Gradle                                                   | Selenide                                                   | Selenoid                                                                        | Allure<br/>Report                                               | Allure <br> TestOps                                              | Jenkins                                                   | Jira                                                   |                                                    Telegram |
@@ -60,9 +61,6 @@ clean main ibs_test
 - BROWSER_SIZE - размер окна барузера, в котором будут запускаться тесты. По умолчанию - 1920x1080.    
 - BASE_URL - адрес проверяемого ресурса, на котором будут запускаться тесты. По умолчанию - https://ibs.ru/. 
 - REMOTE_URL - адрес удаленного сервера, на котором будет запускаться браузер и тесты проверямого ресурса. По умолчанию - https://user1:1234@selenoid.autotests.cloud/wd/hub. 
-
-
-
 
 
 ## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logo/Jenkins.svg"> Сборка в Jenkins
@@ -127,5 +125,5 @@ clean main ibs_test
 ### <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/logo/Selenoid.svg"> Видео отчет запуска тестов (Selenoid)
 
 <p align="center">
-  <img title="Selenoid Video" src="media/screens/Video.gif">
+  <img title="Selenoid Video" src="media/gifs/IBS.gif">
 </p>
