@@ -15,7 +15,7 @@ public class TestBase {
     static void beforeAll() {
 
         Configuration.baseUrl = "https://ibs.ru/";
-        Configuration.pageLoadStrategy = "eager";
+        Configuration.pageLoadStrategy = "normal";
         Configuration.timeout = 5000;
         Configuration.browser = "chrome";
         Configuration.browserVersion = "100.0";
