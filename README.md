@@ -92,7 +92,8 @@ clean main ibs_test
 ## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/logo/Allure_TestOps.svg"> Интеграция с Allure TestOps
           
 
-<a id="#testops"></a> 
+<a id="#testops"></a>
+<a name="Интеграция с Allure TestOps">**Интеграция с Allure TestOps**</a>
 ### Allure TestOps отчет
 
 #### Overview
