@@ -2,21 +2,13 @@
 ## Содержание:
 
 - <a href="#stech">Используемый стек технологий и инструментов</a>
-
 - <a href="#check">Реализованные проверки</a>
-
 - <a href="#engine">Запуск автотестов</a>
-
 - <a href="#build">Сборка в Jenkins</a>
-
 - <a href="#report">Интеграция с Allure</a>
-
 - <a href="#testops">Интеграция с Allure TestOps</a>
-
 - <a href="#jira">Интеграция с Jira</a>
-
 - <a href="#telegram">Уведомления в Telegram через бота</a
-- 
 - <a href="#video">Видео отчет запуска тестов (Selenoid)</a>
 
 <a id="stech"></a>
