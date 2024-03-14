@@ -126,7 +126,7 @@ clean main ibs_test
 
 <a id="telegram"></a> 
 <p align="center">
-<img width="70%" title="Telegram Notifications" src="media/screenshots/Notifications.png">
+<img title="Telegram Notifications" src="media/screenshots/Notifications.png">
 </p>
 
 
