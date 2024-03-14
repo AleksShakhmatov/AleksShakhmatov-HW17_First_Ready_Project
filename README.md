@@ -1,22 +1,22 @@
 # Проект по автоматизации тестовых сценариев для сайта компании IBS
 ## Содержание:
 
-- <a href="#stech"> Используемый стек технологий и инструментов </a>
-- <a href="#check"> Реализованные проверки </a>
-- <a href="#engine"> Запуск автотестов </a>
-- <a href="#build"> Сборка в Jenkins </a>
-- <a href="#report"> Интеграция с Allure </a>
-- <a href="#testops"> Интеграция с Allure TestOps </a>
-- <a href="#jira"> Интеграция с Jira </a>
-- <a href="#telegram"> Уведомления в Telegram через бота </a>
-- <a href="#video"> Видео отчет запуска тестов (Selenoid) </a>
+- <a href="#stech">Используемый стек технологий и инструментов</a>
+- <a href="#check">Реализованные проверки</a>
+- <a href="#engine">Запуск автотестов</a>
+- <a href="#build">Сборка в Jenkins</a>
+- <a href="#report">Интеграция с Allure</a>
+- <a href="#testops">Интеграция с Allure TestOps</a>
+- <a href="#jira">Интеграция с Jira</a>
+- <a href="#telegram">Уведомления в Telegram через бота</a>
+- <a href="#video">Видео отчет запуска тестов (Selenoid)</a>
 
 <a id="#stech"></a>
 ## Используемый стек технологий и инструментов
 
-| Java                                                   | IntelliJ  <br>  Idea                                           | GitHub                                                   | JUnit 5                                                  | Gradle                                                   | Selenide                                                   | Selenoid                                                                        | Allure<br/>Report                                               | Allure <br> TestOps                                              | Jenkins                                                   | Jira                                                   |                                                    Telegram |
-|:-------------------------------------------------------|----------------------------------------------------------------|----------------------------------------------------------|----------------------------------------------------------|----------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------|------------------------------------------------------------------|-----------------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------:|
-| <img src="media/logo/Java.svg" width="50" height="50"> | <img src="media/logo/Intelij_IDEA.svg" width="50" height="50"> | <img src="media/logo/GitHub.svg" width="50" height="50"> | <img src="media/logo/Junit5.svg" width="50" height="50"> | <img src="media/logo/Gradle.svg" width="50" height="50"> | <img src="media/logo/Selenide.svg" width="50" height="50"> | <img src="media/logo/Selenoid.svg" width="50" height="50"  alt="Selenoid"/></a> | <img src="media/logo/Allure_Report.svg" width="50" height="50"> | <img src="media\logo\Allure_TestOps.svg" width="50" height="50"> | <img src="media/logo/Jenkins.svg" width="50" height="50"> | <img src="media/logo/Jira.svg" width="50" height="50"> |  <img src="media\logo\Telegram.svg" width="50" height="50"> |
+| Java                                                    | IntelliJ  <br>  Idea                                            | GitHub                                                    | JUnit 5                                                   | Gradle                                                    | Selenide                                                    | Selenoid                                                    | Allure<br/>Report                                                | Allure <br> TestOps                                               | Jenkins                                                    | Jira                                                    |                                                    Telegram |
+|:--------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------|------------------------------------------------------------------|-------------------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------:|
+| <img height="50" src="media/logo/Java.svg" width="50"/> | <img height="50" src="media/logo/Intelij_IDEA.svg" width="50"/> | <img height="50" src="media/logo/GitHub.svg" width="50"/> | <img height="50" src="media/logo/JUnit5.svg" width="50"/> | <img height="50" src="media/logo/Gradle.svg" width="50"/> | <img height="50" src="media/logo/Selenide.svg" width="50"/> | <img height="50" src="media/logo/Selenoid.svg" width="50"/> | <img height="50" src="media/logo/Allure_Report.svg" width="50"/> | <img height="50" src="media\logo\Allure_TestOps.svg" width="50"/> | <img height="50" src="media/logo/Jenkins.svg" width="50"/> | <img height="50" src="media/logo/Jira.svg" width="50"/> | <img height="50" src="media\logo\Telegram.svg" width="50"/> |
 
 
 <a id="#chek"></a> 
