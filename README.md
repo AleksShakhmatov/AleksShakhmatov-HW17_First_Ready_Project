@@ -67,52 +67,65 @@ clean main ibs_test
 
 ## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logo/Jenkins.svg"> Сборка в Jenkins
 
-Для запуска сборки необходимо перейти в раздел <code>Собрать с параметрами</code> и нажать кнопку <code>Собрать</code>.
+Для запуска сборки необходимо перейти в раздел **"Build with Parameters"** и нажать кнопку **"Build"**.
 <p align="center">
-<img title="Jenkins Build" src="media/screens/jenkins.png">
-</p>
-После выполнения сборки, в блоке <code>История сборок</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным отчетом и тестовой документацией соответственно.
-
-## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logo/Allure_Report.svg"> Пример Allure-отчета
-### Overview
-
-<p align="center">
-<img title="Allure Overview" src="media/screens/allure.png">
+<img title="Jenkins Build" src="media/screenshots/JenkinsBuild.png"> 
 </p>
 
-## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/logo/AllureTestOps.svg"> Интеграция с Allure TestOps
+После выполнения сборки, в блоке **Build History** напротив номера сборки появятся значки <img src="media\logo\Allure_TestOps.svg" width="15" height="15">
+и <img src="media\logo\Allure_Report.svg" width="15" height="15"> , при клике на которые откроются соовтетсвтвующие
+артефакты.  
 
-На *Dashboard* в <code>Allure TestOps</code> видна статистика количества тестов: сколько из них добавлены и проходятся вручную, сколько автоматизированы. Новые тесты, а так же результаты прогона приходят по интеграции при каждом запуске сборки.
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logo/Allure_Report.svg"> Интеграция с Allure
 
-<p align="center">
-<img title="Allure TestOps DashBoard" src="media/screens/AllureTestOps.png">
+### Allure отчет
+
+<p align="center">   
+<img title="Jenkins Build" src="media/screenshots/Allure Report1.png">    
 </p>
 
-### Результат выполнения автотеста
+### Подробнее   
+<p align="center">     
+<img title="Jenkins Build" src="media/screenshots/Allure Report2.png">    
+</p>       
+
+## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/logo/Allure_TestOps.svg"> Интеграция с Allure TestOps
+
+### Allure TestOps отчет
+
+#### Overview
+
+<p align="center">    
+<img title="Allure TestOps Overview" src="media/screenshots/Allure_TestOps1.png">
+</p>
+
+#### DashBoards
+<p align="center">
+<img title="Allure TestOps DashBoards" src="media/screenshots/Allure_TestOps3.png">
+</p>
+
+#### Подробнее
 
 <p align="center">
-<img title="Test Results in Alure TestOps" src="media/screens/allurResults.png">
+<img title="Test Results in Alure TestOps" src="media/screenshots/Allure_TestOps2.png">
 </p>
 
 ## <img width="4%" style="vertical-align:middle" title="Jira" src="media/logo/Jira.svg"> Интеграция с Jira
 
-Реализована интеграция <code>Allure TestOps</code> с <code>Jira</code>, в тикете отображается, какие тест-кейсы были написаны в рамках задачи и результат их прогона.
 
 <p align="center">
-<img title="Jira Task" src="media/screens/Jira.png">
+<img title="Jira Task" src="media/screenshots/Jira.png">
 </p>
 
-### <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
+### <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram через бота
 
-После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов.
 
 <p align="center">
-<img width="70%" title="Telegram Notifications" src="media/screens/Bot.png">
+<img width="70%" title="Telegram Notifications" src="media/screenshots/Notifications.png">
 </p>
 
-### <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/logo/Selenoid.svg"> Видео примера запуска тестов в Selenoid
+### <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/logo/Selenoid.svg"> Видео отчет запуска тестов (Selenoid)
 
-В отчетах Allure для каждого теста прикреплен не только скриншот, но и видео прохождения теста
 <p align="center">
   <img title="Selenoid Video" src="media/screens/Video.gif">
 </p>
