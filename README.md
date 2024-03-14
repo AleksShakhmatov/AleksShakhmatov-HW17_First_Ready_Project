@@ -121,7 +121,7 @@ clean main ibs_test
 <img title="Jira Task" src="media/screenshots/Jira.png">
 </p>
 
-### <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram через бота
+## <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram через бота
 
 
 <a id="telegram"></a> 
@@ -131,7 +131,7 @@ clean main ibs_test
 
 
 <a id="video"></a> 
-### <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/logo/Selenoid.svg"> Видео отчет запуска тестов (Selenoid)
+## <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/logo/Selenoid.svg"> Видео отчет запуска тестов (Selenoid)
 
 <p align="center">
   <img title="Selenoid Video" src="media/gifs/IBS.gif">
