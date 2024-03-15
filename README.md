@@ -72,7 +72,7 @@ clean main ibs_test
 </p>
 
 После выполнения сборки, в блоке **Build History** напротив номера сборки появятся значки <img src="media\logo\Allure_TestOps.svg" width="15" height="15">
-и <img src="media\logo\Allure_Report.svg" width="15" height="15"> , при клике на которые откроются соовтетсвтвующие
+и <img src="media\logo\Allure_Report.svg" width="15" height="15"> , при клике на которые откроются соответствующие
 артефакты.  
 
 ## <img width="40" height="40" style="vertical-align:middle" title="Allure Report" src="media/logo/Allure_Report.svg"> Интеграция с Allure
