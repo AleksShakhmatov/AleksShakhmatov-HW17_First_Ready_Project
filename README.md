@@ -1,5 +1,5 @@
 # Проект по автоматизации тестовых сценариев для сайта компании IBS
-## Содержание:
+## <img width="40" height="40" style="vertical-align:middle" title="Folder" src="media/images/yellow-computer-folder.png"> Содержание:
 
 - <a href="#stech">Используемый стек технологий и инструментов</a>
 - <a href="#check">Реализованные проверки</a>
@@ -12,7 +12,7 @@
 - <a href="#video">Видео отчет запуска тестов (Selenoid)</a>
 
 <a id="stech"></a>
-## Используемый стек технологий и инструментов
+## <img width="40" height="40" style="vertical-align:middle" title="Folder" src="media/images/programm.jpg"> Используемый стек технологий и инструментов
 
 | Java                                                    | IntelliJ  <br>  Idea                                            | GitHub                                                    | JUnit 5                                                   | Gradle                                                    | Selenide                                                    | Selenoid                                                    | Allure<br/>Report                                                | Allure <br> TestOps                                               | Jenkins                                                    | Jira                                                    |                                                    Telegram |
 |:--------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------|------------------------------------------------------------------|-------------------------------------------------------------------|------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------:|
@@ -20,7 +20,7 @@
 
 
 <a id="chek"></a> 
-## :arrow_forward: Реализованные проверки:
+##  <img width="40" height="40" style="vertical-align:middle" title="List" src="media/images/todo.png"> Реализованные проверки
 - Проверка открытия нужного сайта
 - Проверка языка сайта
 - Проверка контактов одного из филиалов компании
@@ -29,7 +29,7 @@
 - Проверка наличия адресов социальных сетей
 
 <a id="engine"></a> 
-##  Запуск автотестов
+## <img width="40" height="40" style="vertical-align:middle" title="Play" src="media/images/play.jpg"> Запуск автотестов
 
 
 ### Запуск тестов из терминала локально:
@@ -64,7 +64,7 @@ clean main ibs_test
                        
 
 <a id="build"></a> 
-## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logo/Jenkins.svg"> Сборка в Jenkins
+## <img width="40" height="40" style="vertical-align:middle" title="Jenkins" src="media/logo/Jenkins.svg"> Сборка в Jenkins
 
 Для запуска сборки необходимо перейти в раздел **"Build with Parameters"** и нажать кнопку **"Build"**.
 <p align="center">
@@ -75,7 +75,7 @@ clean main ibs_test
 и <img src="media\logo\Allure_Report.svg" width="15" height="15"> , при клике на которые откроются соовтетсвтвующие
 артефакты.  
 
-## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logo/Allure_Report.svg"> Интеграция с Allure
+## <img width="40" height="40" style="vertical-align:middle" title="Allure Report" src="media/logo/Allure_Report.svg"> Интеграция с Allure
 
 <a id="report"></a> 
 ### Allure отчет
@@ -89,7 +89,7 @@ clean main ibs_test
 <img title="Jenkins Build" src="media/screenshots/Allure Report2.png">    
 </p>       
 
-## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/logo/Allure_TestOps.svg"> Интеграция с Allure TestOps
+## <img width="40" height="40" style="vertical-align:middle" title="Allure TestOps" src="media/logo/Allure_TestOps.svg"> Интеграция с Allure TestOps
           
 
 <a id="testops"></a>
@@ -114,14 +114,14 @@ clean main ibs_test
 
 
 <a id="jira"></a> 
-## <img width="4%" style="vertical-align:middle" title="Jira" src="media/logo/Jira.svg"> Интеграция с Jira
+## <img width="40" height="40" style="vertical-align:middle" title="Jira" src="media/logo/Jira.svg"> Интеграция с Jira
 
 
 <p align="center">
 <img title="Jira Task" src="media/screenshots/Jira.png">
 </p>
 
-## <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram через бота
+## <img width="40" height="40" style="vertical-align:middle" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram через бота
 
 
 <a id="telegram"></a> 
@@ -131,7 +131,7 @@ clean main ibs_test
 
 
 <a id="video"></a> 
-## <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/logo/Selenoid.svg"> Видео отчет запуска тестов (Selenoid)
+## <img width="40" height="40" style="vertical-align:middle" title="Selenoid" src="media/logo/Selenoid.svg"> Видео отчет запуска тестов (Selenoid)
 
 <p align="center">
   <img title="Selenoid Video" src="media/gifs/IBS.gif">
