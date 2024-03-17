@@ -1,38 +1,37 @@
 package tests;
 
+import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.*;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
+@Tag("demo")
 public class IbsSiteTests extends TestBase {
 
-     @Test
-    @Tag("demo")
+    @Test
     @DisplayName("Проверка сайта компании-автора вакансии")
     void titleGeneralPageIbsTest() {
-        step("Открываем сайт", () ->
-                open("https://ibs.ru/"));
+        step("Открываем сайт", () -> open(Configuration.baseUrl));
         step("Проверяем текст на главной странице", () ->
                 $(".top-slide__desc")
                         .shouldHave(text("Ключевой технологический партнер лидеров российского бизнеса")));
     }
 
     @Test
-    @Tag("demo")
     @DisplayName("Проверка языка сайта")
     void languageMenuPageIbsTest() {
-        step("Открываем сайт", () -> open("https://ibs.ru/"));
+        step("Открываем сайт", () -> open(Configuration.baseUrl));
         step("Меняем язык сайта", () -> $("a[href='/eng/']").shouldHave(text("Eng")).click());
         step("Проверяем текст на главной странице на аглийском языке", () -> $(".top-slide__desc")
                 .shouldHave(text("A key technology partner for Russian business leaders")));
     }
 
     @Test
-    @Tag("demo")
     @DisplayName("Проверка адреса одного из филиалов компании")
     void contactPageIbsTest() {
-        step("Открываем сайт", () -> open("https://ibs.ru/"));
+        step("Открываем сайт", () -> open(Configuration.baseUrl));
         step("Кликаем на контакты", () -> $("a[href='/contacts/']").click());
         step("Проверяем переход на страницу контактов", () -> $(".top--short")
                 .shouldHave(text("Офисы группы компаний IBS")));
@@ -45,10 +44,9 @@ public class IbsSiteTests extends TestBase {
     }
 
     @Test
-    @Tag("demo")
     @DisplayName("Проверка гамбургер-меню сайта")
     void burgerMenuPageIbsTest() {
-        step("Открываем сайт", () -> open("https://ibs.ru/"));
+        step("Открываем сайт", () -> open(Configuration.baseUrl));
         step("Кликаем на гамбургер-меню", () -> $(".header-burger").click());
         step("Проверяем наличие 'Решения и услуги'", () -> $(".navigation-sections")
                 .shouldHave(text("Решения и услуги")));
@@ -65,30 +63,31 @@ public class IbsSiteTests extends TestBase {
     }
 
     @Test
-    @Tag("demo")
     @DisplayName("Проверка наличия строки поиска")
     void searchStringPageIbsTest() {
-        step("Открываем сайт", () -> open("https://ibs.ru/"));
-        step("Проверяем наличие поля ввода для поиска", () ->$(".search-form")
-                .$("[placeholder='Поиск по сайту']"));
+        step("Открываем сайт", () -> open(Configuration.baseUrl));
+        step("Проверяем наличие поля ввода для поиска", () ->$(".js-header-search").click());
+        step("Вводим текст 'IBS'", () -> $(".js-search-input").setValue("IBS").pressEnter());
+        step("Проверяем результат поиска", () -> $(".search-blocks").shouldHave(text("IBS")));
+        step("Закрываем страницу поиска", () -> $ ("a.search-close").click());
     }
 
     @Test
-    @Tag("demo")
     @DisplayName("Проверка наличия адресов социальных сетей")
     void socialContactsPageIbsTest() {
-        step("Открываем сайт", () -> open("https://ibs.ru/"));
+        step("Открываем сайт", () -> open(Configuration.baseUrl));
         step("Проверяем иконку со ссылкой на Вконтакте", () -> $(".footer-socials")
                 .$("a[href='https://vk.com/ru_ibs']"));
         step("Проверяем иконку со ссылкой на Хабр", () -> $(".footer-socials")
                 .$("a[href='https://habr.com/ru/company/ibs/blog/']"));
         step("Проверяем иконку со ссылкой на vc", () -> $(".footer-socials")
                 .$("a[href='https://vc.ru/ibs']"));
-        step("Проверяем иконку со ссылкой на hh", () -> $(".footer-socials")
-                .$("a[href='https://hh.ru/employer/139']"));
         step("Проверяем иконку со ссылкой на Telegram", () -> $(".footer-socials")
                 .$("a[href='https://t.me/ibs_ru']"));
         step("Проверяем иконку со ссылкой на Youtube", () -> $(".footer-socials")
                 .$("a[href='https://www.youtube.com/@ibsru']"));
+        step("Проверяем иконку со ссылкой на hh", () -> $(".footer-socials")
+                .$("a[href='https://hh.ru/employer/139']"));
+
     }
 }

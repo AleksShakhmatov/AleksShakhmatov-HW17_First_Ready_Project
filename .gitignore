@@ -46,3 +46,5 @@ bin/
 gradlew.bat
 gradlew
 settings.grad
+.idea/
+.idea/*
